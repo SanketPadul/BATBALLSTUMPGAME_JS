@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bat Ball Game</title>
+    <link rel="stylesheet" href="batBall.css" />
+  </head>
+  <body>
+    <main style="text-align: center">
+      <h1>Bat Ball Stump Game</h1>
+      <div>
+        <div id="button-hide">
+          <button
+            class="button-game"
+            id="Bat"
+            onclick="
+                batExecution();
+                "
+          >
+            <img
+              src="./image_batBallStump/bat.png"
+              alt="Bat-image"
+              class="game-image"
+            />
+          </button>
+          <button
+            class="button-game"
+            id="Ball"
+            onclick="
+            ballExecution();
+            "
+          >
+            <img
+              src="./image_batBallStump/ball.png"
+              alt="Ball-image"
+              class="game-image"
+            />
+          </button>
+          <button
+            class="button-game"
+            id="Stump"
+            onclick="
+            stumpExecution();
+
+            "
+          >
+            <img
+              src="./image_batBallStump/stump.jpg"
+              alt="Stump-image"
+              class="game-image"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="result-user">
+        <p id="user"></p>
+        <p id="computer"></p>
+        <h3 id="result"></h3>
+      </div>
+
+      <div>
+        <button id="final_result" onclick="getResult()" class="buttonPlay">
+          Final Result
+        </button>
+      </div>
+
+      <div id="table">
+        <table>
+          <th>
+            <tr>
+              <td>Player</td>
+              <td>Win</td>
+              <td>Lose</td>
+              <td>Tie</td>
+              <td>Total</td>
+            </tr>
+          </th>
+          <tr>
+            <td>User</td>
+            <td id="win"></td>
+            <td id="lose"></td>
+            <td id="tie"></td>
+            <td id="total"></td>
+          </tr>
+        </table>
+      </div>
+
+      <button onclick="playAgain()" id="play" class="buttonPlay">
+        Play Again
+      </button>
+    </main>
+
+    <script src="./batBall.js"></script>
+  </body>
+</html>
