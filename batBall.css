@@ -1,0 +1,66 @@
+.buttonPlay{
+    border: none;
+    background-color: rgb(115, 186, 8);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-game{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 5px;
+    border: none;
+
+}
+
+:hover.button-game{
+    transform: scale(1.1);
+    transition: all ease-in-out 300ms;
+
+}
+
+.game-image{
+    height: 90px;
+    border-radius: 45px;
+    border: none;
+
+}
+
+body{
+    text-align: center;
+}
+#user{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#computer
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#table{
+    display:none;
+    width: 25%;
+    margin:auto;
+}
+
+#play{
+    display: none;
+    text-align: center;
+    margin: 15px 46%;
+}
+
+th,td{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 5px 10px;
+    
+}
